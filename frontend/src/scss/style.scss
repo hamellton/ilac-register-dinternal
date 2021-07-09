@@ -1,0 +1,79 @@
+$bgr: #fff;
+$border: #858282;
+// @import "./task";
+// @import "./form";
+//импорт происходит из предварительно установленных пакетов npm install bootswatch bootstrap --save
+@import "~bootswatch/dist/lumen/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/lumen/bootswatch";
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    position: relative;
+    // background: radial-gradient(ellipse at top, rgb(252, 242, 217), transparent);
+            // , radial-gradient(ellipse at bottom, rgb(250, 237, 204), transparent);
+}
+.task-editor {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left:38%;
+    width: 250px;
+    height: 350px;
+    border: 2px solid $border;
+    border-radius: 4px;
+    background-color: #efefef;
+}
+
+.header {
+    border: 2px solid $border;
+    height: 8%;
+    .name {
+        margin: 10px;
+    }
+}
+.main {
+    padding-left: 20px;
+    padding-top: 20px; 
+}
+.footer {
+    position:fixed;
+    bottom:0%;
+    height: 8%;
+    width: 100%;
+    border: 2px solid $border;
+    .name {
+        margin: 10px;
+    }
+}
+
+.oferta-btn:hover {
+    cursor: pointer;
+  }
+  .oferta-btn {
+    font-weight: 600;
+    color: #0c1d33;
+  }
+
+// Bootstrap
+.jumbotron {
+    background-image: url("../img/head2.jpg");
+    background-size: cover;
+    height: 100%;
+  }
+
+  .head-title {
+      margin-right: 2rem;
+  }
+
+  .logo {
+      margin-top: -3.2rem;
+  }
+
+  .hide-el {
+      display: none;
+  }
